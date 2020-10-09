@@ -37,6 +37,7 @@
     "react/prop-types": "off",
     "react/jsx-one-expression-per-line": "off",
     "@typescript-eslint/no-explicit-any": "off",
+    "import/no-duplicates": "off",
     "camelcase": "off",
     "react/jsx-filename-extension": [
       1,

@@ -3,7 +3,7 @@ import styled from 'styled-components/native';
 export const Container = styled.View`
   flex: 1;
   justify-content: center;
-  padding: 0 30px 150px;
+  padding: 0 40px 100px;
   position: relative;
 `;
 
@@ -15,7 +15,7 @@ export const Title = styled.Text`
 `;
 
 export const BackButton = styled.TouchableOpacity`
-  margin-top: 40px;
+  margin-top: 80px;
 `;
 
 export const UserAvatarButton = styled.TouchableOpacity`

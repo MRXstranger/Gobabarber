@@ -44,7 +44,7 @@ const Dashboard: React.FC = () => {
     navigate('Profile');
   }, [navigate]);
 
-  const navigateToCreateApppointment = useCallback(
+  const navigateToCreateAppointment = useCallback(
     (providerId: string) => {
       navigate('CreateAppointment', { providerId });
     },
@@ -72,7 +72,7 @@ const Dashboard: React.FC = () => {
         }
         renderItem={({ item: provider }) => (
           <ProviderContainer
-            onPress={() => navigateToCreateApppointment(provider.id)}
+            onPress={() => navigateToCreateAppointment(provider.id)}
           >
             <ProviderAvatar source={{ uri: provider.avatar_url }} />
 

@@ -26,6 +26,7 @@ import {
   Title,
   UserAvatarButton,
   UserAvatar,
+  PowerButton,
 } from './styles';
 
 interface ProfileFormData {
@@ -37,7 +38,7 @@ interface ProfileFormData {
 }
 
 const Profile: React.FC = () => {
-  const { user, updateUser } = useAuth();
+  const { user, updateUser, signOut } = useAuth();
 
   const formRef = useRef<FormHandles>(null);
   const navigation = useNavigation();
@@ -173,6 +174,10 @@ const Profile: React.FC = () => {
             <BackButton onPress={handleGoBack}>
               <Icon name="chevron-left" size={24} color="#999591" />
             </BackButton>
+
+            <PowerButton onPress={signOut}>
+              <Icon name="power" size={24} color="#999999" />
+            </PowerButton>
 
             <UserAvatarButton onPress={handleUpdateAvatar}>
               <UserAvatar source={{ uri: user.avatar_url }} />

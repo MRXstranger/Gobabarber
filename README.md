@@ -35,6 +35,9 @@ $ cd gobarber-mobile
 # Instale as dependências
 $ yarn install
 
+# Dentro da pasta ios
+$ pod install
+
 # Inicie o emulador IOS
 $ yarn ios
 
